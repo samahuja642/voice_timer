@@ -86,7 +86,7 @@ if('timer' in command or 'reminder' in command):
         seconds = getAppropriate(words,'seconds')
         total_time = hours*60*60 + minutes*60 + seconds
         countdown(total_time)
-        playsound('sound.mp3')
+        playsound('./sound.mp3')
 else:
     print('Wrong Command!')
 engine.say('Signing Off!')
